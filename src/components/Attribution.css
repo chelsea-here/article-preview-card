@@ -1,0 +1,21 @@
+/* by wrapping the absolutely positioned attribution in a div with no height it
+ remains in the normal flow of the document and no space is created for the element
+ in the page layout preventing layout mismatch for project side-by-side comparison. */
+.attributionWrapper {
+  z-index: 2;
+  top: 1.5rem;
+  position: relative;
+  width: 100%;
+}
+
+.attribution {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  color: var(--primary-color-dark);
+  font-size: 11px;
+}
+
+.attribution a {
+  text-decoration: underline;
+}

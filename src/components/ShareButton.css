@@ -1,0 +1,36 @@
+.shareButton {
+  display: flex;
+  position: relative;
+  z-index: 2;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  overflow: hidden;
+  border-radius: 50%;
+  border: none;
+  margin-left: auto; /* right aligned */
+}
+
+.shareButton:hover {
+  cursor: pointer;
+}
+
+.shareButton.active {
+  background-color: var(--color-gray-medium);
+}
+
+.shareButton.notActive {
+  background-color: var(--primary-color-light);
+}
+
+.shareIcon.active {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(256deg)
+    brightness(105%) contrast(101%);
+}
+
+.shareIcon.notActive {
+  filter: invert(53%) sepia(5%) saturate(1768%) hue-rotate(175deg)
+    brightness(91%) contrast(88%);
+}

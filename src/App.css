@@ -1,38 +1,202 @@
-.App {
-  text-align: center;
+* {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.app {
+  /* background */
+  background: var(--primary-color-light);
+  width: 100vw;
   min-height: 100vh;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+@media (max-width: 940) {
+  .app {
+    padding: 4.625rem 1.5rem 5.5625rem 1.5rem; /* essentially sets up minimum padding for mobile */
+  }
 }
 
-.App-link {
-  color: #61dafb;
+.main {
+  /* card element */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  border-radius: 0.625rem;
+  background-color: var(--color-white);
+  width: 87.2vw;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 940px) {
+  /* 940px is minimum width needed for share popup desktop config to fit on screen plus some padding */
+  .main {
+    max-width: 28rem; /* text starts getting to stringy after this width */
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media (min-width: 941px) {
+  .main {
+    flex-direction: row;
+    max-width: 45.625rem; /* based on figma file max */
   }
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  object-fit: cover;
+  justify-content: center;
+  overflow: hidden;
+}
+
+@media (max-width: 940px) {
+  .hero {
+    height: 12.5rem;
+    object-position: 50% 35%;
+    width: auto;
+  }
+}
+
+@media (min-width: 941px) {
+  .hero {
+    height: auto;
+    object-position: left bottom;
+    min-width: 17.8125rem;
+  }
+}
+
+.article {
+  /* all content other than hero image */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-top: clamp(2.25rem, 2.338rem + -0.3756vw, 2rem);
+  padding-left: clamp(2rem, 1.8239rem + 0.7512vw, 2.5rem);
+  padding-right: clamp(2rem, 1.8239rem + 0.7512vw, 2.5rem);
+  padding-bottom: clamp(1.25rem, 0.9859rem + 1.1268vw, 2rem);
+}
+
+.textContent {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding-bottom: 2rem;
+}
+
+.heading {
+  color: var(--primary-color-dark);
+  line-height: clamp(1.5rem, 1.412rem + 0.3756vw, 1.75rem);
+  letter-spacing: clamp(0.0125rem, 0.0114rem + 0.0047vw, 0.01563rem);
+  font-weight: 700;
+}
+
+@media (max-width: 940px) {
+  .heading {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 941px) {
+  .heading {
+    font-size: 1.25rem;
+  }
+}
+
+.description {
+  color: var(--color-gray-medium);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  line-height: 1.25rem; /* 153.846% */
+  letter-spacing: 0.122px;
+}
+
+.creationData {
+  align-self: flex-end;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  min-height: 2.5rem;
+}
+
+.avatarCropper {
+  width: 2.5rem;
+  height: 2.5rem;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.avatar {
+  display: inline;
+  margin: 0 auto;
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+}
+
+.stackedText {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  font-size: 0.8125rem;
+  line-height: 1.25rem;
+  letter-spacing: 0.00763rem;
+}
+
+.name {
+  color: var(--color-gray-medium);
+  font-weight: 700;
+  font-size: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+}
+
+.date {
+  color: var(--color-gray-light);
+  font-weight: 500;
+  font-size: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+}
+
+.share {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  margin-left: auto; /* right aligned */
+}
+
+.attributionWrapper {
+  position: relative;
+  width: 100%;
+  height: 0;
+}
+
+.attribution {
+  width: 100%;
+  top: 1.5rem;
+  text-align: center;
+  position: absolute;
+  color: var(--primary-color-dark);
+  font-size: 11px;
+}
+
+.attribution a {
+  text-decoration: underline;
 }
