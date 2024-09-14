@@ -24,9 +24,10 @@ Users should be able to:
 
 ### Screenshot
 
-![](./public/screenshot%20desktop.png)
-![](./public/screenshot%20tablet.png)
-![](./public/screenshot%20mobile.png)
+![](./public/screenshot%20desktop.jpg)
+![](./public/screenshot%20desktop-active.jpg)
+![](./public/screenshot%20mobile.jpg)
+![](./public/screenshot%20mobile-active.jpg)
 
 ### Links
 
@@ -45,7 +46,7 @@ Users should be able to:
 
 ### Resources
 
-- [Blog on CSS subclasses best practice](https://blog.logrocket.com/how-to-use-css-variables-like-a-pro/)
+- [Blog on Building a Toggle Button Component](https://www.dhiwise.com/post/react-toggle-button-a-journey-from-creation-to-customization)
 
 ## Author
 
