@@ -19,10 +19,10 @@ function App() {
 
         <article className="article">
           <section className="textContent">
-            <p className="heading">
+            <h1 className="heading">
               Shift the overall look and feel by adding these wonderful touches
               to furniture in your home
-            </p>
+            </h1>
             <p className="description">
               Ever been in a room and felt like something was missing? Perhaps
               it felt slightly bare and uninviting. I’ve got some simple tips to
@@ -49,7 +49,7 @@ function App() {
         <SharePopup isActive={isActive} className="mobile" />
         {/* for mobile view, relative position to container */}
       </main>
-      <Attribution />
+      <Attribution role="contentinfo" />
     </div>
   );
 }
