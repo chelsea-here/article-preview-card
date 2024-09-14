@@ -24,15 +24,15 @@ Users should be able to:
 
 ### Screenshot
 
-![](./public/screenshot%20desktop.jpg)
-![](./public/screenshot%20desktop-active.jpg)
-![](./public/screenshot%20mobile.jpg)
-![](./public/screenshot%20mobile-active.jpg)
+![](./public/screenshot%20desktop.jpeg)
+![](./public/screenshot%20desktop-active.jpeg)
+![](./public/screenshot%20mobile.jpeg)
+![](./public/screenshot%20mobile-active.jpeg)
 
 ### Links
 
-- Solution URL: [https://github.com/chelsea-here/article-preview-component](https://github.com/chelsea-here/article-preview-component)
-- Live Site URL: [https://article-preview-component-chelsea-heres-projects.vercel.app/](https:/article-preview-component-chelsea-heres-projects.vercel.app/)
+- Solution URL: [https://github.com/chelsea-here/article-preview-card](https://github.com/chelsea-here/article-preview-card)
+- Live Site URL: [https://article-preview-card-gilt.vercel.app/](https://article-preview-card-gilt.vercel.app/)
 
 ## Built with
 
