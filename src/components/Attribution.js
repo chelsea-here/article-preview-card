@@ -1,6 +1,6 @@
 export default function Attribution() {
   return (
-    <div className="attributionWrapper">
+    <div role="contentinfo" className="attributionWrapper">
       <div className="attribution">
         <p>
           Challenge by{" "}

@@ -49,7 +49,7 @@ function App() {
         <SharePopup isActive={isActive} className="mobile" />
         {/* for mobile view, relative position to container */}
       </main>
-      <Attribution role="contentinfo" />
+      <Attribution />
     </div>
   );
 }
